@@ -107,7 +107,7 @@ if response.status_code == 200:
     plt.savefig(nama_gambar, dpi=300, bbox_inches='tight')
     print(f"Grafik berhasil disimpan sebagai: {nama_gambar}")
     
-    # 7. Simpan output DataFrame Spark ke format CSV 
+    # 7. Simpan output DataFrame Spark ke dalam format CSV 
     rata_rata_df.write.csv("Dataset_RataRata_Tahunan", header=True, mode="overwrite")
     spark_df.write.csv("Dataset_Mentah_Keseluruhan", header=True, mode="overwrite")
     print("SUCCESS: Data berhasil disimpan oleh Apache Spark!")
