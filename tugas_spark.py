@@ -8,7 +8,7 @@ from pyspark.sql.functions import year, col, avg, round
 
 # --- Mulai Script Utama ---
 
-# 2. Inisialisasi Apache Spark Session (Wajib untuk memulai Spark)
+# 2. Inisialisasi Apache Spark Session (Wajib untuk memulai Spark)....
 print("Memulai Apache Spark...")
 spark = SparkSession.builder \
     .appName("Proyek1_API_ke_Spark") \
