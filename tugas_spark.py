@@ -29,7 +29,7 @@ if response.status_code == 200:
     # 4. Preprocessing Data Mentah
     daily = data_json['daily']
     
-    # Menyusun data menjadi baris-baris (List of Tuples)
+    # Menyusun data menjadi baris-baris (List of Tsuples)qdw
     data_list = []
     for i in range(len(daily['time'])):
          # Menangani nilai null jika ada data sensor yang kosong dari API
@@ -107,7 +107,7 @@ if response.status_code == 200:
     plt.savefig(nama_gambar, dpi=300, bbox_inches='tight')
     print(f"Grafik berhasil disimpan sebagai: {nama_gambar}")
     
-    # 7. Simpan output DataFrame Spark ke dalam format CSV 
+    # 7. Simpan output DataFrame Spark ke format CSV 
     rata_rata_df.write.csv("Dataset_RataRata_Tahunan", header=True, mode="overwrite")
     spark_df.write.csv("Dataset_Mentah_Keseluruhan", header=True, mode="overwrite")
     print("SUCCESS: Data berhasil disimpan oleh Apache Spark!")
