@@ -17,7 +17,6 @@ spark = SparkSession.builder \
     .master("local[*]") \
     .getOrCreate()
 
-# Menghilangkan peringatan (WARNING) agar tampilan terminal bersih dan profesional
 spark.sparkContext.setLogLevel("ERROR")
 
 # =====================================================================
